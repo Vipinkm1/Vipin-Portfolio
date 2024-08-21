@@ -95,11 +95,22 @@
 }
 /* profile */
 
+.profile-logo-size{
+  width: 250px;
+}
+.img-container{
+  height: 240px;
+}
+.img-logo-size{
+  padding: 50px 30px 50px 30px;
+  width: 300px ;
+}
 .profile-img-upper{
 width: 350px;
 height: 300px;
 background-color: rgb(239, 235, 235) ;
 border-radius: 5px;
+padding: 30px;
 }
 .person-name{
   padding:  20px 0px 20px 0px;
@@ -114,9 +125,9 @@ border-radius: 5px;
  color: rgb(71, 128, 213);
 }
 .intorduction-part{
- line-height: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: 'Poppins', sans-serif,'Times New Roman', Times, serif ;
+  font-size: 17px;
   color: #6f6a6a;
 }
 .highlight-text{
@@ -194,6 +205,7 @@ border-radius: 5px;
   justify-content: start;
   gap: 20px;
 }
+
  .show-work-container{
   border: 1px solid rgb(218, 216, 216);
   width: 400px;
@@ -253,6 +265,7 @@ border-radius: 5px;
   height: 260px;
   border-radius: 5px;
   margin-top: 20px;
+  padding: 20px;
 }
 .company-logo{
   width: 40px;
@@ -302,4 +315,13 @@ border-radius: 5px;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap:  20px;
+}
+/* Recent Project css */
+
+.ecommerce-size{
+  width: 360px;
+  height: 220px;
+  border-radius: 5px ;
+  border: 2px solid black;
+  cursor: pointer;
 }

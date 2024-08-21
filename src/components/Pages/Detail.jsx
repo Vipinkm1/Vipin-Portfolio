@@ -7,6 +7,8 @@ import JavaScript from '../../assets/JavaScript.png';
 import ReactLogo from '../../assets/reactlogo.png';
 import Redux from '../../assets/reduxtoolkit.png';
 import Firebase from '../../assets/firebase.png';
+import Ecommerce from '../../assets/Ecommerce.png'
+import Expence from '../../assets/Expence.png'
 const Detail = () => {
   //  show the list of the work experience
 const workExperience = [
@@ -32,7 +34,9 @@ const workExperience = [
           <div className='work-title'>
             <h2 className='font-size-title'>Work Experiences</h2>
           </div>
+        
           {workExperience.map((experience, id) => (
+            <div className='work-experience-wrapper'>
             <div key={id} className='work-experience-content'>
             <div className='year-show'>
               <p className='compnay-profile'>{experience.year}</p>
@@ -45,14 +49,15 @@ const workExperience = [
               </div>
             </div>
           </div>
+          </div>
           ))}
+        
         </div>
         {/*  show experties are */}
         <div className='my-experties-container'>
           <div className='work-title'>
             <h2 className='font-size-title'>My Experties Area</h2>
           </div>
-       
             <div  className='show-experience-content'>
             {experties.map((language, id) => (
             <div key={id}  className='language-logo'>
@@ -61,8 +66,6 @@ const workExperience = [
             </div>
           ))}
           </div>
-        
-          
         </div>
       </div>
       <div className='project-show'>
@@ -75,13 +78,16 @@ const workExperience = [
             </div>
           </div>
           <div className='project-image'>
-
+           <div className='ecommerce-img'>
+            <img className='ecommerce-size' src={Ecommerce} />
+           </div>
           </div>
           <div className='project-image'>
-
+          <div className='expence-img'>
+            <img className='ecommerce-size' src={Expence} />
+           </div>
           </div>
         </div>
-
       </div>
     </div>
   )
