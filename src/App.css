@@ -7,7 +7,6 @@
   padding: 20px 100px 20px 100px;
   background-color: aliceblue;
   width: 100%;
-
 }
 /* navabar-section css */
 .nav-border{
@@ -406,4 +405,8 @@ gap:  20px;
 }
 .no-img-icon{
   font-size: 50px;
+}
+/*  service  section page design */
+.text-color{
+  color: #898888;
 }
