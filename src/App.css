@@ -14,6 +14,7 @@
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
+
 }
 .logo-size{
   width: 200px;
@@ -47,7 +48,7 @@
 .show-active{
   border-radius: 2px;
   padding:  10px 10px 10px 10px;
-  background: #e1dede;
+  /* background: #e1dede; */
 }
 .nav:hover{
   border-radius: 2px;
@@ -409,4 +410,43 @@ gap:  20px;
 /*  service  section page design */
 .text-color{
   color: #898888;
+}
+.service-scroll{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.services-item{
+  background: #898888;
+  padding: 40px 30px 40px 30px;
+  border-radius: 2px;
+}
+.question-container {
+  margin-top: 30px;
+}
+.question-color{
+  color: rgb(10, 22, 52)  ;
+}
+/* frequentionly asked question ask */
+.container-1{
+  border: 1px solid rgb(218, 216, 216);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 2px;
+  background: #e1dede;
+}
+.question-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plus-icon{
+  font-size: 30px;
+  font-weight: 600;
+  color:rgb(113, 113, 245);
+  cursor: pointer;
+}
+.answer-border{
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
 }

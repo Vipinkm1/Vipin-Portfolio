@@ -21,7 +21,7 @@ const Navbar = ({onNavigate}) => {
                     <AiOutlineHome className='icon'/>
                     <p>Home</p>
                 </div>
-                <div className='nav '  onClick={()=> onNavigate('about')}>
+                <div className='nav ' onClick={() => onNavigate('about')}>
                     <PiUserCircle className='icon'/>
                     <p>About</p>
                 </div>
