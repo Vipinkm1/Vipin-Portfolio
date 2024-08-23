@@ -7,19 +7,30 @@ import Services from './components/Pages/Services/Services'
 import Project from './components/Pages/Project/Project'
 import Blog from './components/Pages/Blog/Blog'
 import Contact from './components/Pages/Contact/Contact'
-
+import Navbar from './components/Navbar/Navbar'
+import Profile from './components/Sidebar/Profile'
+import Detail from './components/Pages/Detail'
 function App() {
   return (
     <>
       <BrowserRouter>
+      <div className='home-page'>
+        <Navbar />
+        <div className='hero-section'>
+            <div className=''>
+                <Profile/>
+            </div>  
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route index element={<Detail/>} />
           <Route path= '/about' element ={<About/>} />  
           <Route path = '/services' element= {<Services/>}/>
           <Route  path = '/project' element= {<Project/>}/>
           <Route path = '/blog' element = {<Blog/>}/>
           <Route path = '/contact' element = {<Contact/>}/>
         </Routes>
+        </div>
+        </div>
       </BrowserRouter> 
     </>
   )
