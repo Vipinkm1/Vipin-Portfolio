@@ -518,3 +518,17 @@ gap:  20px;
   padding-top: 20px;
 }
 /* blog section css */
+.project-container-border-flex{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 20px;
+}
+/*  blog post show container available here */
+.project-border{
+ border-radius: 5px;
+ width: 450px;
+ height: 300px;
+ background-color: #dcd8d8;
+}

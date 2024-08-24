@@ -25,7 +25,7 @@ const Profile = () => {
       console.log('Text is not copy', error)
     })
   }
-
+  //  check main componets and start the main condition value and added the send datas
   return (
     <div className='profile-border'>
         <div className='profile-img-upper'>
