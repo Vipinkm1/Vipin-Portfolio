@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PiPhoneCallThin } from "react-icons/pi";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
@@ -9,6 +9,23 @@ import { MdOutlineWavingHand } from "react-icons/md";
 import Student from '../../assets/student.png'
 // import VipinKumarLogo from '../../assets/vipinkumar-logo.png'
 const Profile = () => {
+  
+  //  text copy function and logic is here
+
+  const [copied, setCopied] = useState(false)
+  const textToCopy = 'vipinkm1654@gmail.com';
+  const handleCopy =() => {
+    navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      setCopied(true)
+      console.log('Text is copy')
+      setTimeout(() => setCopied(false), 2000)
+    })
+    .catch((error) => {
+      console.log('Text is not copy', error)
+    })
+  }
+
   return (
     <div className='profile-border'>
         <div className='profile-img-upper'>
@@ -26,7 +43,7 @@ const Profile = () => {
           </div>
           <div className='call-section  copy-bg'>
             <IoCopyOutline className='call-icon '/>
-            <button className='book-btn font-copy'>Copy Link</button>
+            <button className='book-btn font-copy' onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</button>
           </div>
         </div>
         {/*  Social icon added the below of this container */}

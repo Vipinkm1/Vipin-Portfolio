@@ -9,7 +9,10 @@ import Redux from '../../assets/reduxtoolkit.png';
 import Firebase from '../../assets/firebase.png';
 import Ecommerce from '../../assets/Ecommerce.png'
 import Expence from '../../assets/Expence.png'
+import { useNavigate } from 'react-router-dom';
 const Detail = () => {
+  //  navigate to the project
+  const navigate = useNavigate()
   //  show the list of the work experience
   const workExperience = [
     { id: 1, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
@@ -26,6 +29,7 @@ const Detail = () => {
     { id: 4, expertiesImage: ReactLogo, expertiesTitle: 'React' },
     { id: 5, expertiesImage: Redux, expertiesTitle: 'Redux Toolkit' },
     { id: 6, expertiesImage: Firebase, expertiesTitle: 'Firebase' }
+    // add more id 
   ]
   //  check more item value
   return (
@@ -72,7 +76,7 @@ const Detail = () => {
         <div className='recent-project-containerr'>
           <div className='flex-item'>
             <h2 className='font-size-title'>Recent project</h2>
-            <div className='show-all-Project'>
+            <div className='show-all-Project'  onClick={() => navigate('/project')}>
               <p>All Project</p>
               <MdOutlineArrowRightAlt />
             </div>
@@ -93,6 +97,8 @@ const Detail = () => {
           </div>
         </div>
       </div>
+      {/*  start here adding the more container */}
+      <div className='border-flex'></div>
     </div>
   )
 }

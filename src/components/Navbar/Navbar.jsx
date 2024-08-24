@@ -40,9 +40,9 @@ const Navbar = () => {
                     <p>Contact</p>
                 </Link>
             </div>
-            <div>
+            <Link to={'/contact'}>
                 <button className='lets-talk'>Let's Talks</button>
-            </div>
+            </Link>
         </div>
      </div>
     )

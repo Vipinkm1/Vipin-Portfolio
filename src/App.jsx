@@ -17,9 +17,8 @@ function App() {
       <div className='home-page'>
         <Navbar />
         <div className='hero-section'>
-            <div className=''>
+           
                 <Profile/>
-            </div>  
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route index element={<Detail/>} />

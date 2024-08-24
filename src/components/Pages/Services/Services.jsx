@@ -11,8 +11,8 @@ const Services = () => {
 
   //  imported value added the main condition value
   const services = [
-    { id: 1 },
-    { id: 2 },
+    { id: 1, serviceImage: '' },
+    { id: 2, serviceImage: '' },
     { id: 3 },
     { id: 4 },
     { id: 5 },
