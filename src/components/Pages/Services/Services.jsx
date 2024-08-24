@@ -8,7 +8,8 @@ const Services = () => {
   const [openBoxThird, setOpenBoxThird] = useState(false)
   const [openBoxFourth, setOpenBoxFourth] = useState(false)
   const [openBoxFivth, setOpenBoxFivth] = useState(false)
-  
+
+  //  imported value added the main condition value
   const services = [
     { id: 1 },
     { id: 2 },
@@ -21,7 +22,7 @@ const Services = () => {
     { id: 9 },
     { id: 10 }
   ]
- 
+  //  conditiopen plus and - button will be render here 
   return (
     <div className='about-border service-scroll'>
       <div className='about-flex-item'>
@@ -48,58 +49,60 @@ const Services = () => {
       <div className='container-1'>
         <div className='question-heading'>
           <p>Question-1</p>
-          <p className='plus-icon' onClick={() => setOpenBoxFirst(true)}>+</p>
+          <p className='plus-icon' onClick={() => setOpenBoxFirst(!openBoxFirst)}>{openBoxFirst ? '-' : '+'}</p>
         </div>
-     {openBoxFirst && (
-        <div className='answer-border'>
-         <p>Hello answer</p>
-        </div>
-      )}
+        {openBoxFirst && (
+          <div className='answer-border'>
+            <p>Hello answer</p>
+          </div>
+        )}
       </div>
       <div className='container-1'>
         <div className='question-heading'>
           <p>Question-1</p>
-          <p className='plus-icon' onClick={()=> setOpenBoxSecond(true)}>+</p>
+          <p className='plus-icon' onClick={() => setOpenBoxSecond(!openBoxSecond)}>{openBoxSecond ? '-' : '+'}</p>
         </div>
         {openBoxSecond && (
-        <div className='answer-border'>
-        <p> Hello answer</p>
-        </div>
-      )}
+          <div className='answer-border'>
+            <p> Hello answer</p>
+          </div>
+        )}
       </div>
       <div className='container-1'>
         <div className='question-heading'>
           <p>Question-1</p>
-          <p className='plus-icon' onClick={() => setOpenBoxThird(true)}>+</p>
+          <p className='plus-icon' onClick={() => setOpenBoxThird(!openBoxThird)}>{openBoxThird ? '-' : '+'}</p>
         </div>
         {openBoxThird && (
-        <div className='answer-border'>
-        <p> Hello answer</p>
-        </div> 
-      )}
+          <div className='answer-border'>
+            <p> Hello answer</p>
+          </div>
+        )}
       </div>
       <div className='container-1'>
         <div className='question-heading'>
           <p>Question-1</p>
-          <p className='plus-icon' onClick={() => setOpenBoxFourth(true)}>+</p>
+          <p className='plus-icon' onClick={() => setOpenBoxFourth(!openBoxFourth)}>{openBoxFourth ? '-' : '+'}</p>
         </div>
         {openBoxFourth && (
-        <div className='answer-border'>
-        <p> Hello answer</p>
-        </div>
-      )}
+          <div className='answer-border'>
+            <p> Hello answer</p>
+          </div>
+        )}
       </div>
       <div className='container-1'>
         <div className='question-heading'>
           <p>Question-1</p>
-          <p className='plus-icon' onClick={() => setOpenBoxFivth(true)}>+</p>
+          <p className='plus-icon' onClick={() => setOpenBoxFivth(!openBoxFivth)}>{openBoxFivth ? '-' : '+'}</p>
         </div>
         {openBoxFivth && (
-        <div className='answer-border'>
-        <p> Hello answer</p>
-        </div>
-      )}
+          <div className='answer-border'>
+            <p> Hello answer</p>
+          </div>
+        )}
       </div>
+    {/* any new componets add here start  */}
+
     </div>
   )
 }
