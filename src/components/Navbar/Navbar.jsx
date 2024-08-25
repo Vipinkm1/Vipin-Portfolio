@@ -31,10 +31,6 @@ const Navbar = () => {
                     <VscGithubProject className='icon'/>
                     <p>Project</p>
                 </Link>
-                <Link to={'/blog'} className='nav' >
-                    <RiBloggerLine className='icon'/>
-                    <p>Blog</p>
-                </Link>
                 <Link to={'/contact'} className='nav'>
                     <RiContactsLine className='icon'/>
                     <p>Contact</p>

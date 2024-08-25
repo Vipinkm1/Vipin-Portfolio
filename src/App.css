@@ -495,40 +495,38 @@ gap:  20px;
 .project-quote{
   padding: 10px 10px 20px 10px;
 }
-.project-container{
-  background: #898888;
+.project-img-border{
+
   border-radius: 5px;
-  height: 450px;
-  margin-top: 20px;
   padding: 20px;
-}
-.img-container{
-  object-fit: contain;
+  margin: 0px 0px 20px 0px;
+  background: #faf8f8;
 }
 .project-img-size{
   width: 100%;
+  object-fit: contain;
   border-radius: 5px;
 }
-.site-flex{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 5px;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 600;
-  color: rgb(10, 22, 52);
-  text-decoration: underline;
-}
-.project-detail{
- padding-top: 20px;
+.project-flex{
+  padding: 10px 0px 0px 0px;
 }
 .technology-border{
-  border: 1px solid black;
-  background: #e1dede;
-  border-radius: 5px;
   margin-top: 10px;
-  padding-top: 20px;
+border-radius: 5px;
+  padding: 20px 0px 20px 5px;
+  background-color: #fff;
+
+}
+a{
+  text-decoration: none;
+}
+.project-title{
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.technology{
+  color: rgb(157, 134, 232) ;
 }
 /* blog section css */
 .project-container-border-flex{
