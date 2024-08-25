@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <div className='nav-border'>
         <div className='nav-item'>
-            <div className='logo-container'>
+            <Link to={'/'} className='logo-container'>
                 <img className='logo-size' src={Logo} />
-            </div>
+            </Link>
             <div className='nav-container'>
                 <Link to={'/'} className='nav show-active'  >
                     <AiOutlineHome className='icon'/>

@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Vedio from '../../../assets/video.png'
-import { CiImageOn } from "react-icons/ci"; 
+import Html from '../../../assets/html.png';
+import Css from '../../../assets/css.png';
+import JavaScript from '../../../assets/JavaScript.png';
+import ReactLogo from '../../../assets/reactlogo.png';
+import Redux from '../../../assets/reduxtoolkit.png';
+import Firebase from '../../../assets/firebase.png';
+import Node from '../../../assets/nodejs.png'
+import MongoDb from '../../../assets/mongodb.png'
+import Express from '../../../assets/express-js.png'
 const About = () => {
   //  show the animation count value here logic
   const [yearsExperience, setYearsExperience] = useState(0);
@@ -27,16 +35,15 @@ const About = () => {
     }
   }, [])
   const BrandShow = [
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-    { id: 4 },
-    { id: 5 },
-    { id: 6 },
-    { id: 7 },
-    { id: 8 },
-    { id: 9 },
-    { id: 10 }
+    { id: 1, expertiesImage: Html, expertiesTitle: 'Html' },
+    { id: 2, expertiesImage: Css, expertiesTitle: 'Css' },
+    { id: 3, expertiesImage: JavaScript, expertiesTitle: 'JavaScript' },
+    { id: 4, expertiesImage: ReactLogo, expertiesTitle: 'React' },
+    { id: 5, expertiesImage: Redux, expertiesTitle: 'Redux Toolkit' },
+    { id: 6, expertiesImage: Firebase, expertiesTitle: 'Firebase' },
+    { id: 7, expertiesImage: Node, expertiesTitle: 'Node.Js' },
+    { id: 7, expertiesImage: MongoDb, expertiesTitle: 'MongoDB' },
+    { id: 7, expertiesImage: Express, expertiesTitle: 'Express.Js' }
   ]
   return (
     <div className='about-border'>
@@ -76,7 +83,8 @@ const About = () => {
         {BrandShow.map((brandItem, id) => (
           <div key={id} className='container-brand-img '>
             <div className='image-size-padding' >
-              <CiImageOn className='no-img-icon' />
+              <img src={brandItem.expertiesImage} className='no-img-icon' />
+              <p>{brandItem.expertiesTitle}</p>
             </div>
           </div>
         ))}
