@@ -15,7 +15,7 @@ const Detail = () => {
   const navigate = useNavigate()
   //  show the list of the work experience
   const workExperience = [
-    { id: 1, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
+    { id: 1, year: '2024-Present', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
     { id: 2, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
     { id: 3, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
     { id: 4, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },

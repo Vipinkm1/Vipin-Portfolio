@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Vedio from '../../../assets/video.png'
-import { CiImageOn } from "react-icons/ci";
+import { CiImageOn } from "react-icons/ci"; 
 const About = () => {
   //  show the animation count value here logic
   const [yearsExperience, setYearsExperience] = useState(0);
@@ -19,8 +19,8 @@ const About = () => {
       }, 30)
     }
     //  show value here
-    animatedCount(setYearsExperience, 40)
-    animatedCount(setProjectCompletion, 40)
+    animatedCount(setYearsExperience, 1)
+    animatedCount(setProjectCompletion, 12)
     animatedCount(setHappyClient, 40)
     return () => {
       clearInterval(animatedCount)
@@ -51,7 +51,7 @@ const About = () => {
       </div>
       {/* Show some quote here  */}
       <div className='quote-text'>
-        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>1 years</span> of Experiences over 24+ Country Worldwide.</p>
+        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>1 years</span> of Experiences .</p>
       </div>
       {/* show the experience in the count wise also show the project completion */}
       <div className='experience-count-show'>
@@ -69,7 +69,7 @@ const About = () => {
         </div>
       </div>
       <div className='show-brand-title'>
-        <p className='name-intro brand-title'>Working With 50+ Brands ✨ Worldwide</p>
+        <p className='name-intro brand-title'>Technology Which I Have ✨ Knowledge</p>
       </div>
       {/*  show the brand image list here */}
       <div className='brand-img'>

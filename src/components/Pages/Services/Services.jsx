@@ -22,7 +22,7 @@ const Services = () => {
     { id: 9 },
     { id: 10 }
   ]
-  //  conditiopen plus and - button will be render here 
+  //  
   return (
     <div className='about-border service-scroll'>
       <div className='about-flex-item'>
@@ -42,6 +42,7 @@ const Services = () => {
           <div key={id} className='services-item'>
           </div>
         ))}
+
       </div>
       <div className='question-container'>
         <p className='name-intro question-color'>Frequently Asked Questions</p>
@@ -51,6 +52,7 @@ const Services = () => {
           <p>Question-1</p>
           <p className='plus-icon' onClick={() => setOpenBoxFirst(!openBoxFirst)}>{openBoxFirst ? '-' : '+'}</p>
         </div>
+        {/*  open the first box */}
         {openBoxFirst && (
           <div className='answer-border'>
             <p>Hello answer</p>
@@ -78,6 +80,7 @@ const Services = () => {
             <p> Hello answer</p>
           </div>
         )}
+        
       </div>
       <div className='container-1'>
         <div className='question-heading'>
@@ -101,7 +104,7 @@ const Services = () => {
           </div>
         )}
       </div>
-    {/* any new componets add here start  */}
+      {/* any new componets add here start  */}
 
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Blog = () => {
+const Blog = () => { 
   //  blog post container show 
   return (
     <div className='about-border add-scroll-bar'>

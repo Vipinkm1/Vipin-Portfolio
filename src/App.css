@@ -532,3 +532,9 @@ gap:  20px;
  height: 300px;
  background-color: #dcd8d8;
 }
+/*  conatact us form css is here */
+ .form-border{
+  border-radius: 5px;
+  background: #dcd8d8;
+  height:  350px;
+ }

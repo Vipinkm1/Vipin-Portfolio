@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { PiPhoneCallThin } from "react-icons/pi";
 import { IoCopyOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
 import { RiLinkedinBoxLine } from "react-icons/ri";
@@ -7,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { MdOutlineWavingHand } from "react-icons/md";
 import Student from '../../assets/student.png'
+import { GoDownload } from "react-icons/go";
 // import VipinKumarLogo from '../../assets/vipinkumar-logo.png'
 const Profile = () => {
   
@@ -38,20 +38,23 @@ const Profile = () => {
         <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
         <div className='two-btn'>
           <div className=' call-section bg-btn'>
-            <PiPhoneCallThin className='call-icon'/>
-            <button className='book-btn'>Book A Call</button>
+      
+            <GoDownload className='call-icon'/>
+            <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>
+            <button className='book-btn'> Resume</button>
+            </a>
           </div>
           <div className='call-section  copy-bg'>
             <IoCopyOutline className='call-icon '/>
-            <button className='book-btn font-copy' onClick={handleCopy}>{copied ? 'Copied!' : 'Copy'}</button>
+            <button className='book-btn font-copy' onClick={handleCopy}>{copied ? 'Copied!' : 'Copy Email'}</button>
           </div>
         </div>
         {/*  Social icon added the below of this container */}
         <div className='social-icon'>
-          <FaInstagram className='insta'/>
-          <RiLinkedinBoxLine className='insta'/>
-          <FaGithub className='insta'/>
-          <CiTwitter className='insta'/>
+          <a href='#'><FaInstagram className='insta'/> </a>
+         <a  href='https://www.linkedin.com/in/kumar-vipin1/'><RiLinkedinBoxLine className='insta'/> </a>
+          <a href='https://github.com/Vipinkm1'><FaGithub className='insta'/></a>
+          <a href='#'><CiTwitter className='insta'/></a>
         </div>
     </div>
   )
