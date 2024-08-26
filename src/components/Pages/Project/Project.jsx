@@ -1,7 +1,7 @@
 import React from 'react'
 import Ecommerce from '../../../assets/Ecommerce.png'
 import RealEstate from '../../../assets/realestate.png'
-import Expense from '../../../assets/expence.png'
+import Expense from '../../../assets/Expence.png'
 import ProductCart from '../../../assets/productCart.png'
 import ToDoList from '../../../assets/todo.png'
 import { IoIosArrowRoundForward } from "react-icons/io";
