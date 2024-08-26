@@ -9,53 +9,51 @@ import Student from '../../assets/student.png'
 import { GoDownload } from "react-icons/go";
 // import VipinKumarLogo from '../../assets/vipinkumar-logo.png'
 const Profile = () => {
-  
   //  text copy function and logic is here
-
   const [copied, setCopied] = useState(false)
   const textToCopy = 'vipinkm1654@gmail.com';
-  const handleCopy =() => {
+  const handleCopy = () => {
     navigator.clipboard.writeText(textToCopy)
-    .then(() => {
-      setCopied(true)
-      console.log('Text is copy')
-      setTimeout(() => setCopied(false), 2000)
-    })
-    .catch((error) => {
-      console.log('Text is not copy', error)
-    })
+      .then(() => {
+        setCopied(true)
+        console.log('Text is copy')
+        setTimeout(() => setCopied(false), 2000)
+      })
+      .catch((error) => {
+        console.log('Text is not copy', error)
+      })
   }
   //  check main componets and start the main condition value and added the send datas
   return (
     <div className='profile-border'>
-        <div className='profile-img-upper'>
+      <div className='profile-img-upper'>
         <div className='img-container'>
-         <img className='profile-logo-size' src={Student}/>
+          <img className='profile-logo-size' src={Student} />
         </div>
-        </div>
-        {/*  profile page */}
-        <div className='person-name'>Vipin Kumar  <span c><MdOutlineWavingHand className='waving-hand'/> </span></div>
-        <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
-        <div className='two-btn'>
-          <div className=' call-section bg-btn'>
-      
-            <GoDownload className='call-icon'/>
-            <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>
+      </div>
+      {/*  profile page */}
+      <div className='person-name'>Vipin Kumar  <span c><MdOutlineWavingHand className='waving-hand' /> </span></div>
+      <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
+      <div className='two-btn'>
+        <div className=' call-section bg-btn'>
+
+          <GoDownload className='call-icon' />
+          <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>
             <button className='book-btn'> Resume</button>
-            </a>
-          </div>
-          <div className='call-section  copy-bg'>
-            <IoCopyOutline className='call-icon '/>
-            <button className='book-btn font-copy' onClick={handleCopy}>{copied ? 'Copied!' : 'Copy Email'}</button>
-          </div>
+          </a>
         </div>
-        {/*  Social icon added the below of this container */}
-        <div className='social-icon'>
-          <a href='#'><FaInstagram className='insta'/> </a>
-         <a  href='https://www.linkedin.com/in/kumar-vipin1/'><RiLinkedinBoxLine className='insta'/> </a>
-          <a href='https://github.com/Vipinkm1'><FaGithub className='insta'/></a>
-          <a href='#'><CiTwitter className='insta'/></a>
+        <div className='call-section  copy-bg'>
+          <IoCopyOutline className='call-icon ' />
+          <button className='book-btn font-copy' onClick={handleCopy}>{copied ? 'Copied!' : 'Copy Email'}</button>
         </div>
+      </div>
+      {/*  Social icon added the below of this container */}
+      <div className='social-icon'>
+        <a href='#'><FaInstagram className='insta' /> </a>
+        <a href='https://www.linkedin.com/in/kumar-vipin1/'><RiLinkedinBoxLine className='insta' /> </a>
+        <a href='https://github.com/Vipinkm1'><FaGithub className='insta' /></a>
+        <a href='#'><CiTwitter className='insta' /></a>
+      </div>
     </div>
   )
 }

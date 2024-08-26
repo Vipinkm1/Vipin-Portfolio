@@ -516,7 +516,6 @@ gap:  20px;
 border-radius: 5px;
   padding: 20px 0px 20px 5px;
   background-color: #fff;
-
 }
 a{
   text-decoration: none;
@@ -595,7 +594,6 @@ a{
   border: none;
   outline: none;
   border: 2px;
-
 }
 .button-width:hover{
   background-color:rgb(113, 113, 245) ;
