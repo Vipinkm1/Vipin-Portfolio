@@ -542,11 +542,63 @@ a{
  border-radius: 5px;
  width: 450px;
  height: 300px;
- background-color: #dcd8d8;
+
 }
 /*  conatact us form css is here */
  .form-border{
   border-radius: 5px;
-  background: #dcd8d8;
-  height:  350px;
+  background-color: #f6d2d2;
+  padding: 30px;
  }
+ .form-item-design{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 20px;
+ }
+ .input-width{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+ }
+ .input-full-width{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: normal;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+
+ }
+ .input-name{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ }
+ .submit-btn-container{
+  width: 100%;
+  margin-top: 20px;
+
+ }
+.button-width{
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border: 2px;
+
+}
+.button-width:hover{
+  background-color:rgb(113, 113, 245) ;
+  color: #fff;
+  transition: 0.6s ease-in-out;
+}
