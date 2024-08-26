@@ -85,7 +85,7 @@
 }
 .profile-border{
   border: 1px solid rgb(218, 216, 216);
-  width: 50%;
+  width: 100%;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
@@ -330,6 +330,7 @@ gap:  20px;
   border: 2px solid black;
   cursor: pointer;
 }
+? 
 /*  About section page css */
 .about-border{
   border: 1px solid rgb(218, 216, 216);
@@ -617,9 +618,9 @@ a{
   .hero-section{
     display: block;
   }
-  .profile-border{
+  /* .profile-border{
     width:400px;
-  }
+  } */
   .project-show{ 
     width:400px;
     margin-top: 20px;
@@ -663,4 +664,5 @@ a{
 .quote-text{
   width: 100%;
 }
+/* project css media query for the mobile */
 }
