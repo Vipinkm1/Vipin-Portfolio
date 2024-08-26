@@ -8,8 +8,6 @@
   background-color: aliceblue;
   width: 100%;
   height: auto;
-  
-
 }
 /* navabar-section css */
 .nav-border{
@@ -541,7 +539,6 @@ a{
  border-radius: 5px;
  width: 450px;
  height: 300px;
-
 }
 /*  conatact us form css is here */
  .form-border{
@@ -572,18 +569,15 @@ a{
   border: none;
   border-radius: 2px;
   outline: none;
-
  }
  .input-name{
   font-size: 16px;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
  }
  .submit-btn-container{
   width: 100%;
   margin-top: 20px;
-
  }
 .button-width{
   padding: 10px;
@@ -598,5 +592,34 @@ a{
 .button-width:hover{
   background-color:rgb(113, 113, 245) ;
   color: #fff;
-  transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out; 
+}
+/*  media query for all device */
+@media(min-width: 400px ) and (max-width: 600px){
+  .home-page{
+   padding: 10px;
+  }
+  .detail-border{
+    display: block;
+    margin-top: 20px;
+  }
+  .hero-section{
+    display: block;
+  }
+  .profile-border{
+    width:400px;
+  }
+  .project-show{ 
+    width:400px;
+    margin-top: 20px;
+}
+.project-image{
+ padding: 0px;
+  margin-top: 0px;
+ background: none;
+ border: none;
+}
+.recent-project-containerr{
+  padding: 20px;
+}
 }
