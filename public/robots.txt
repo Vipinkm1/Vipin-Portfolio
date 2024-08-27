@@ -1,3 +1,0 @@
-user-agent: *
-Allow: /
-Sitemap:https://vipin-portfolio.vercel.app/sitemap.xml
