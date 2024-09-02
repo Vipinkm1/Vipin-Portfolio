@@ -96,6 +96,7 @@ const Detail = () => {
             </div>
           </div>
         </div>
+
       </div>
       {/*  start here adding the more container */}
       <div className='border-flex'></div>

@@ -15,6 +15,7 @@
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
+  width: 100%;
 }
 .logo-size{
   width: 200px;
@@ -106,7 +107,7 @@
   margin-left: 10px;
 }
 .img-container{
-  height: 240px;
+  height: auto;
 }
 .img-logo-size{
   padding: 50px 30px 50px 30px;
@@ -339,8 +340,8 @@ gap:  20px;
 /*  About section page css */
 .about-border{
   border: 1px solid rgb(218, 216, 216);
-  width: 930px;
-  height: 650px;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   background-color: #fff;
   padding:  30px  20px 30px 20px ;
@@ -605,9 +606,9 @@ a{
   transition: 0.6s ease-in-out; 
 }
 /*  media query for all device */
-@media(min-width:380px) and (max-width: 600px){
+@media(max-width: 460px){
   .home-page{
-    padding: 10px
+    padding: 0px;
   }
   .nav-container{
     display: block;
@@ -629,11 +630,54 @@ a{
    padding: 10px;
   }
   .project-image{
-    width: 380px;
+    width:100%;
     padding: 20px;
   }
   .ecommerce-size{
-    width: 350px;
+    width: 100%;
   }
-
+  .brand-img{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .profile-border{
+    width:  100%;
+  }
+  .show-work-container{
+    width: 100%;
+   }
+   .my-experties-container{
+    width: 100%;
+    padding: 15px;
+   }
+   .project-show{ 
+    margin-top: 20px;
+    width: 100%;
+  }
+   .profile-logo-size{
+     margin-left: 40px;
+   }
+  .profile-img-upper{
+    width: 100%;
+    }
+    .about-border{
+     margin-top: 20px;
+    }
+    .name-intro{
+      font-size: 17px;
+    }
+    .available-flex{
+     padding: 5px;
+    }
+    .quote-text{
+     width: 100%;
+    }
+    .frequently-question-title{
+      font-size: 18px;
+    }
+    .project-font-size{
+     font-size: 25px;
+    }
+    .quote-size{
+     font-size: 16px;
+    }
   }

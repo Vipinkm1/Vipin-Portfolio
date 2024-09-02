@@ -80,7 +80,7 @@ const Services = () => {
       </div>
       <div className='container-1'>
         <div className='question-heading'>
-          <p className='frequently-question-title'>Waht does do web developer?</p>
+          <p className='frequently-question-title'>What does do web developer?</p>
           <p className='plus-icon' onClick={() => setOpenBoxThird(!openBoxThird)}>{openBoxThird ? '-' : '+'}</p>
         </div>
         {openBoxThird && (

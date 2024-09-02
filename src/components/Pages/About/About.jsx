@@ -91,7 +91,6 @@ const About = () => {
       </div>
       {/*  our testimonials show container box */}
       <div className='container-flex'>
-
       </div>
     </div>
   )
