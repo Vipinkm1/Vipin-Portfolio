@@ -85,15 +85,15 @@
 }
 .profile-border{
   border: 1px solid rgb(218, 216, 216);
-  width:370px;
-  height: 620px;
+  width: 400px;
+  height: auto;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
 }
 .detail-border{
-  width: 945px; 
-  height: 945px;
+  width: 100%; 
+  height: auto;
   border-radius: 5px; 
   display: flex;
   align-items:  'center';
@@ -209,6 +209,7 @@ padding: 30px;
 /*  Work experience page */
 .work-experience{
   display: flex;
+
   flex-direction: column;
   justify-content: start;
   gap: 20px;
@@ -604,3 +605,35 @@ a{
   transition: 0.6s ease-in-out; 
 }
 /*  media query for all device */
+@media(min-width:380px) and (max-width: 600px){
+  .home-page{
+    padding: 10px
+  }
+  .nav-container{
+    display: block;
+  }
+  .nav-item{
+    display: block;
+  }
+  .hero-section{
+    display: block;
+  }
+  .detail-border{
+    display: block;
+    margin-top: 20px;
+  }
+  .project-show{ 
+    width: 400px;
+  }
+  .recent-project-containerr{
+   padding: 10px;
+  }
+  .project-image{
+    width: 380px;
+    padding: 20px;
+  }
+  .ecommerce-size{
+    width: 350px;
+  }
+
+  }
