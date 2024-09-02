@@ -661,6 +661,8 @@ a{
     }
     .about-border{
      margin-top: 20px;
+     padding: 10px;
+     width: 100%;
     }
     .name-intro{
       font-size: 17px;
