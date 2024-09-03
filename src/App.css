@@ -74,10 +74,12 @@
   font-size: 30px;
   color: rgb(14, 14, 48);
   cursor: pointer;
-  display: none;
 }
+
+
 /* hero -section */
 .hero-section{
+
   display: flex;
   justify-content: start;
   margin-top: 20px;
@@ -683,3 +685,5 @@ a{
      font-size: 16px;
     }
   }
+  
+  

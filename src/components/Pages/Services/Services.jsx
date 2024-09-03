@@ -12,8 +12,6 @@ const Services = () => {
   const [openBoxSecond, setOpenBoxSecond] = useState(false)
   const [openBoxThird, setOpenBoxThird] = useState(false)
   const [openBoxFourth, setOpenBoxFourth] = useState(false)
-  const [openBoxFivth, setOpenBoxFivth] = useState(false)
-
   //  imported value added the main condition value
   const services = [
     { id: 1, serviceImage: UX, serviceTitle: 'UX/UI Designer' },

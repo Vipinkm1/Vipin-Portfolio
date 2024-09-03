@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../assets/logo.png'
 import { AiOutlineHome } from "react-icons/ai";
 import { PiUserCircle } from "react-icons/pi";
@@ -8,13 +8,21 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RiContactsLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const handleMenu = () => {
+        setIsOpen(!isOpen)
+    }
     return (
+        //  check the main condition value are added the same value is here
         <div className='nav-border'>
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>
                     <img className='logo-size' src={Logo} />
                 </Link>
-                <div className='nav-container'>
+                <div className='hamburger-menu-bar' onClick={handleMenu}>
+                    <GiHamburgerMenu />
+                </div>
+                <div className={`nav-container ${isOpen ? 'true' : ''}`} >
                     <Link to={'/'} className='nav show-active'  >
                         <AiOutlineHome className='icon' />
                         <p>Home</p>
@@ -39,9 +47,6 @@ const Navbar = () => {
                 <Link to={'/contact'}>
                     <button className='lets-talk'>Let's Talks</button>
                 </Link>
-                <div className='hamburger-menu-bar'>
-                    <GiHamburgerMenu/>
-                </div>
             </div>
         </div>
     )
