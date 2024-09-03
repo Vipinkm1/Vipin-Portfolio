@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 const Contact = () => {
+  //  track the value of the user whose put in the input element
   const [formSubmit, setfFormSubmit] = useState({
     name: '',
     email: '',
@@ -40,6 +41,9 @@ const Contact = () => {
       <div className='new-text-padding project-quote'>
         <p className='project-font-size quote-size'>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
       </div>
+      {/*  add the main component value  to show the start showing  the input field value  and show the 
+      
+       */}
       <div className='form-border'>
         {/* add the form input field here */}
         <form onSubmit={handleSubmit} >

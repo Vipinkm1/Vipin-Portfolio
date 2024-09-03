@@ -11,42 +11,46 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const handleMenu = () => {
         setIsOpen(!isOpen)
+        console.log(isOpen)
     }
+    //  adding the main condition value show the product value adding main concept show the individual adding main
+    //  check the condition value added the main condition value adding main components
     return (
-        //  check the main condition value are added the same value is here
-        <div className='nav-border'>
+        <div className='nav-border'  >
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>
                     <img className='logo-size' src={Logo} />
                 </Link>
-                <div className='hamburger-menu-bar' onClick={handleMenu}>
-                    <GiHamburgerMenu />
-                </div>
-                <div className={`nav-container ${isOpen ? 'true' : ''}`} >
-                    <Link to={'/'} className='nav show-active'  >
-                        <AiOutlineHome className='icon' />
-                        <p>Home</p>
-                    </Link>
-                    <Link to={'/about'} className='nav '>
-                        <PiUserCircle className='icon' />
-                        <p>About</p>
-                    </Link>
-                    <Link to={'/services'} className='nav' >
-                        <IoLayersOutline className='icon' />
-                        <p>Services</p>
-                    </Link>
-                    <Link to={'/project'} className='nav' >
-                        <VscGithubProject className='icon' />
-                        <p>Project</p>
-                    </Link>
-                    <Link to={'/contact'} className='nav'>
-                        <RiContactsLine className='icon' />
-                        <p>Contact</p>
-                    </Link>
-                </div>
+                {isOpen && (
+                    <div className='nav-container' >
+                        <Link to={'/'} className='nav show-active'  >
+                            <AiOutlineHome className='icon' />
+                            <p>Home</p>
+                        </Link>
+                        <Link to={'/about'} className='nav '>
+                            <PiUserCircle className='icon' />
+                            <p>About</p>
+                        </Link>
+                        <Link to={'/services'} className='nav' >
+                            <IoLayersOutline className='icon' />
+                            <p>Services</p>
+                        </Link>
+                        <Link to={'/project'} className='nav' >
+                            <VscGithubProject className='icon' />
+                            <p>Project</p>
+                        </Link>
+                        <Link to={'/contact'} className='nav'>
+                            <RiContactsLine className='icon' />
+                            <p>Contact</p>
+                        </Link>
+                    </div>
+                )}
                 <Link to={'/contact'}>
                     <button className='lets-talk'>Let's Talks</button>
                 </Link>
+                <div className='hamburger-menu-bar' onClick={handleMenu}>
+                    <GiHamburgerMenu />
+                </div>
             </div>
         </div>
     )

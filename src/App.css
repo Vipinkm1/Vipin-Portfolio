@@ -74,7 +74,9 @@
   font-size: 30px;
   color: rgb(14, 14, 48);
   cursor: pointer;
-}
+  
+  /*  check the condition value added the main componetes
+   */}
 
 
 /* hero -section */
@@ -615,8 +617,16 @@ a{
   .nav-container{
     display: block;
   }
+  .lets-talk{
+    display: none;
+  } 
   .nav-item{
     display: block;
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
   }
   .hero-section{
     display: block;
