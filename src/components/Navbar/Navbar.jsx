@@ -15,15 +15,14 @@ const Navbar = () => {
     } 
 
     //   
-    
     return (
         <div className='nav-border'  >
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>
                     <img className='logo-size' src={Logo} />
                 </Link>
-                {isOpen && (
-                    <div className={`nav-container ${isOpen ? 'open' : ''}`} >
+             
+                    <div className='nav-container'>
                         <Link to={'/'} className='nav show-active'  >
                             <AiOutlineHome className='icon' />
                             <p>Home</p>
@@ -45,7 +44,7 @@ const Navbar = () => {
                             <p>Contact</p>
                         </Link>
                     </div>
-                )}
+                
                 <Link to={'/contact'}>
                     <button className='lets-talk'>Let's Talks</button>
                 </Link>
