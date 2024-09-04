@@ -29,6 +29,7 @@ const Detail = () => {
     { id: 4, expertiesImage: ReactLogo, expertiesTitle: 'React' },
     { id: 5, expertiesImage: Redux, expertiesTitle: 'Redux Toolkit' },
     { id: 6, expertiesImage: Firebase, expertiesTitle: 'Firebase' }
+    
     // add more id 
   ]
   //  check more item value

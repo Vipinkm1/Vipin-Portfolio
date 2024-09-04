@@ -12,9 +12,10 @@ const Navbar = () => {
     const handleMenu = () => {
         setIsOpen(!isOpen)
         console.log(isOpen)
-    }
-    //  adding the main condition value show the product value adding main concept show the individual adding main
-    //  check the condition value added the main condition value adding main components
+    } 
+
+    //   
+    
     return (
         <div className='nav-border'  >
             <div className='nav-item'>
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <img className='logo-size' src={Logo} />
                 </Link>
                 {isOpen && (
-                    <div className='nav-container' >
+                    <div className={`nav-container ${isOpen ? 'open' : ''}`} >
                         <Link to={'/'} className='nav show-active'  >
                             <AiOutlineHome className='icon' />
                             <p>Home</p>

@@ -7,18 +7,22 @@ import { CiTwitter } from "react-icons/ci";
 import { MdOutlineWavingHand } from "react-icons/md";
 import Student from '../../assets/student.png'
 import { GoDownload } from "react-icons/go";
-// import VipinKumarLogo from '../../assets/vipinkumar-logo.png'
+
 const Profile = () => {
+
+  //  
   //  text copy function and logic is here
   const [copied, setCopied] = useState(false)
   const textToCopy = 'vipinkm1654@gmail.com';
   const handleCopy = () => {
+    //  copy the text email for the inqury perpose
     navigator.clipboard.writeText(textToCopy)
       .then(() => {
         setCopied(true)
         console.log('Text is copy')
         setTimeout(() => setCopied(false), 2000)
       })
+      //  if the text is not copy then show the not 
       .catch((error) => {
         console.log('Text is not copy', error)
       })
