@@ -610,14 +610,14 @@ a{
   }
   .nav-container{
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
     transform: translate(-100%);
-    position: absolute;
-    top: 0px;
+    position:  absolute;
+    top: 60px;
     left: 0px;
     background: #fff;
     width: 150px;
-    height: 100vh;
+    height:  auto;
     transition: transform 0.6s ease;
     z-index: 1000;
     border-radius: 2px;
@@ -632,7 +632,6 @@ a{
     display: none;
   } 
   .nav-item{
-   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -707,14 +706,7 @@ a{
     }
     /*  nav condition value to show that are same product */
     .nav{
-      display: flex;
-      align-items: center;
-      justify-content: start;
       gap: 10px;
-      cursor: pointer;
-      font-size: 18px;
-      color: #6f6a6a;
-      padding: 10px 10px; 
     
     }
   }
