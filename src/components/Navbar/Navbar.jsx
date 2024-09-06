@@ -14,15 +14,16 @@ const Navbar = () => {
         console.log(isOpen)
     } 
 
-    //   
+  
     return (
+        //  return the jsx code value and show 
+
         <div className='nav-border'  >
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>
                     <img className='logo-size' src={Logo} />
                 </Link>
-             
-                    <div className='nav-container'>
+                    <div className={`nav-container ${isOpen ? 'active' : ''}`}>
                         <Link to={'/'} className='nav show-active'  >
                             <AiOutlineHome className='icon' />
                             <p>Home</p>
@@ -44,7 +45,6 @@ const Navbar = () => {
                             <p>Contact</p>
                         </Link>
                     </div>
-                
                 <Link to={'/contact'}>
                     <button className='lets-talk'>Let's Talks</button>
                 </Link>

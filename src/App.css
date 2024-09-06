@@ -75,6 +75,7 @@
   color: rgb(14, 14, 48);
   cursor: pointer;
   display: none;
+
 }
 /* hero -section */
 .hero-section{
@@ -613,9 +614,12 @@ a{
   .nav-container{
     display: none;
   }
-  .nav-container.open{
+  .hamburger-menu-bar{
     display: block;
-    transform:  translateY((0));
+  }
+  .nav-container.open{
+    left: 0;
+    display: block;
   }
   .lets-talk{
     display: none;
@@ -627,12 +631,6 @@ a{
     align-items: center;
     justify-content: space-between;
   }
-
- /*  show the container value added in the container box and show contain only the 
- 
- 
- */
-
   .hero-section{
     display: block;
   }
@@ -658,6 +656,8 @@ a{
   }
   .profile-border{
     width:  100%;
+    /*  check the conditon value */
+    margin-top: -20px;
   }
   .show-work-container{
     width: 100%;
