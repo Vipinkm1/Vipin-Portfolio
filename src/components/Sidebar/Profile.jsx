@@ -9,8 +9,6 @@ import Student from '../../assets/student.png'
 import { GoDownload } from "react-icons/go";
 
 const Profile = () => {
-
-  //  
   //  text copy function and logic is here
   const [copied, setCopied] = useState(false)
   const textToCopy = 'vipinkm1654@gmail.com';
@@ -27,7 +25,6 @@ const Profile = () => {
         console.log('Text is not copy', error)
       })
   }
-  //  check main componets and start the main condition value and added the send datas
   return (
     <div className='profile-border'>
       <div className='profile-img-upper'>
@@ -40,7 +37,6 @@ const Profile = () => {
       <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
       <div className='two-btn'>
         <div className=' call-section bg-btn'>
-
           <GoDownload className='call-icon' />
           <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>
             <button className='book-btn'> Resume</button>
@@ -61,5 +57,4 @@ const Profile = () => {
     </div>
   )
 }
-
 export default Profile

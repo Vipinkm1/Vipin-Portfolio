@@ -14,10 +14,7 @@ const Navbar = () => {
         console.log(isOpen)
     } 
 
-  
     return (
-        //  return the jsx code value and show 
-
         <div className='nav-border'  >
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>

@@ -42,9 +42,9 @@
 }
 .nav-container{
   display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 20px;
+ align-items: center;
+ justify-content: space-between;
+  flex-direction: row;  gap: 20px;
 }
 .show-active{
   border-radius: 2px;
@@ -68,14 +68,11 @@
   cursor: pointer;
   border-radius: 3px ;
 } 
-
-/*  adding the hamburger menu bar for the mobile view show devices*/
 .hamburger-menu-bar{
   font-size: 30px;
   color: rgb(14, 14, 48);
   cursor: pointer;
   display: none;
-
 }
 /* hero -section */
 .hero-section{
@@ -115,8 +112,8 @@
   width: 300px ;
 }
 .profile-img-upper{
-width: 350px;
-height: 300px;
+  width: 350px;
+  height: 300px;
 background-color: rgb(239, 235, 235) ;
 border-radius: 5px;
 padding: 30px;
@@ -612,21 +609,30 @@ a{
     padding: 0px;
   }
   .nav-container{
-    display: none;
+    flex-direction: column;
+    gap: 20px;
+    transform: translate(-100%);
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background: #fff;
+    width: 150px;
+    height: 100vh;
+    transition: transform 0.6s ease;
+    z-index: 1000;
+    border-radius: 2px;
+  }
+  .nav-container.active{
+    transform: translate(0);
   }
   .hamburger-menu-bar{
-    display: block;
-  }
-  .nav-container.open{
-    left: 0;
     display: block;
   }
   .lets-talk{
     display: none;
   } 
   .nav-item{
-    display: block;
-    /* display: none; */
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -656,7 +662,7 @@ a{
   }
   .profile-border{
     width:  100%;
-    /*  check the conditon value */
+   
     margin-top: -20px;
   }
   .show-work-container{
@@ -698,6 +704,18 @@ a{
     }
     .quote-size{
      font-size: 16px;
+    }
+    /*  nav condition value to show that are same product */
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #6f6a6a;
+      padding: 10px 10px; 
+    
     }
   }
   
