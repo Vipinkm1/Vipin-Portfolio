@@ -610,10 +610,10 @@ a{
   }
   .nav-container{
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     transform: translate(-100%);
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0px;
     background: #fff;
     width: 150px;
