@@ -8,7 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Project = () => {
   const projectList = [
-    { id: 1, ProductImg: Ecommerce, ProjectTitle: 'Ecommerce Website', technoloy: 'Html|Css|JavaScript|React.Js|Payment Integration|Firebase|Material UI', link:'https://ecommerce-vipinkm1.vercel.app/' },
+    { id: 1, ProductImg: Ecommerce, ProjectTitle: 'Ecommerce Website', technoloy: 'Html|Css|JavaScript|React.Js|Payment Integration|Firebase|Material UI', link: 'https://ecommerce-vipinkm1.vercel.app/' },
     { id: 2, ProductImg: RealEstate, ProjectTitle: 'Real Estate Website', technoloy: 'Html|Css|JavaScript|React.Js|Tailwind Css|MongoDB|Firebase', link: 'https://real-estate-project-2023.vercel.app/' },
     { id: 3, ProductImg: Expense, ProjectTitle: 'Expense Tracker Application', technoloy: 'Html|Css|JavaScript|React.Js|', link: 'https://expenses-tracker-app-five.vercel.app/' },
     { id: 4, ProductImg: ProductCart, ProjectTitle: 'Ecommmerce Product Cart', technoloy: 'Html|Css|JavaScript|React.Js|', link: 'https://product-cart-r6vh.vercel.app/' },
@@ -33,12 +33,12 @@ const Project = () => {
                 <p className='name-intro'>{projectItem.ProjectTitle}</p>
               </div>
               <a href={projectItem.link} target='_blank' rel='noopener noreferrer'>
-              <div className='available-flex'>
-            
-                <p className='name-intro available-font'>Visite Site</p>
-                <IoIosArrowRoundForward />
-               
-              </div>
+                <div className='available-flex'>
+
+                  <p className='name-intro available-font'>Visite Site</p>
+                  <IoIosArrowRoundForward />
+
+                </div>
               </a>
             </div>
             <div className='technology-border'>

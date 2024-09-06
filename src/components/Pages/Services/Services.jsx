@@ -20,12 +20,14 @@ const Services = () => {
     { id: 4, serviceImage: Website, serviceTitle: "Website Maintenence" },
     { id: 5, serviceImage: Developer, serviceTitle: 'Website Developer' },
     { id: 6, serviceImage: Cms, serviceTitle: 'CMS Website' },
-    { id: 7,  serviceImage: UX, serviceTitle: 'UX/UI Designer' },
-    { id: 8 , serviceImage: Website, serviceTitle: "Website Maintenence"},
+    { id: 7, serviceImage: UX, serviceTitle: 'UX/UI Designer' },
+    { id: 8, serviceImage: Website, serviceTitle: "Website Maintenence" },
     { id: 9, serviceImage: Website, serviceTitle: "Website Maintenence" },
     { id: 10, serviceImage: Website, serviceTitle: "Website Maintenence" }
   ]
-  //  
+
+
+  
   return (
     <div className='about-border service-scroll'>
       <div className='about-flex-item'>
@@ -54,6 +56,7 @@ const Services = () => {
         <p className='name-intro question-color'>Frequently Asked Questions</p>
       </div>
       <div className='container-1'>
+      {/*  check the open box are  in the component and it will be shown or not */}
         <div className='question-heading'>
           <p className='frequently-question-title'>What does fronted developer do?</p>
           <p className='plus-icon' onClick={() => setOpenBoxFirst(!openBoxFirst)}>{openBoxFirst ? '-' : '+'}</p>
@@ -87,7 +90,6 @@ const Services = () => {
             </p>
           </div>
         )}
-        
       </div>
       <div className='container-1'>
         <div className='question-heading'>
@@ -100,8 +102,6 @@ const Services = () => {
           </div>
         )}
       </div>
-      {/* any new componets add here start  */}
-
     </div>
   )
 }

@@ -5,8 +5,8 @@ import { RiLinkedinBoxLine } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { MdOutlineWavingHand } from "react-icons/md";
-import Student from '../../assets/student.png'
 import { GoDownload } from "react-icons/go";
+import Vipinphoto from '../../assets/vipinkumar-logo.png'
 
 const Profile = () => {
   //  text copy function and logic is here
@@ -29,13 +29,14 @@ const Profile = () => {
     <div className='profile-border'>
       <div className='profile-img-upper'>
         <div className='img-container'>
-          <img className='profile-logo-size' src={Student} />
+          <img className='profile-logo-size' src={Vipinphoto} />
         </div>
       </div>
       {/*  profile page */}
       <div className='person-name'>Vipin Kumar  <span c><MdOutlineWavingHand className='waving-hand' /> </span></div>
       <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
       <div className='two-btn'>
+
         <div className=' call-section bg-btn'>
           <GoDownload className='call-icon' />
           <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>

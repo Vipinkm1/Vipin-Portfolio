@@ -12,36 +12,35 @@ const Navbar = () => {
     const handleMenu = () => {
         setIsOpen(!isOpen)
         console.log(isOpen)
-    } 
-
+    }
     return (
         <div className='nav-border'  >
             <div className='nav-item'>
                 <Link to={'/'} className='logo-container'>
                     <img className='logo-size' src={Logo} />
                 </Link>
-                    <div className={`nav-container ${isOpen ? 'active' : ''}`}>
-                        <Link to={'/'} className='nav show-active'  >
-                            <AiOutlineHome className='icon' />
-                            <p>Home</p>
-                        </Link>
-                        <Link to={'/about'} className='nav '>
-                            <PiUserCircle className='icon' />
-                            <p>About</p>
-                        </Link>
-                        <Link to={'/services'} className='nav' >
-                            <IoLayersOutline className='icon' />
-                            <p>Services</p>
-                        </Link>
-                        <Link to={'/project'} className='nav' >
-                            <VscGithubProject className='icon' />
-                            <p>Project</p>
-                        </Link>
-                        <Link to={'/contact'} className='nav'>
-                            <RiContactsLine className='icon' />
-                            <p>Contact</p>
-                        </Link>
-                    </div>
+                <div className={`nav-container ${isOpen ? 'active' : ''}`}>
+                    <Link to={'/'} className='nav show-active'  >
+                        <AiOutlineHome className='icon' />
+                        <p>Home</p>
+                    </Link>
+                    <Link to={'/about'} className='nav '>
+                        <PiUserCircle className='icon' />
+                        <p>About</p>
+                    </Link>
+                    <Link to={'/services'} className='nav' >
+                        <IoLayersOutline className='icon' />
+                        <p>Services</p>
+                    </Link>
+                    <Link to={'/project'} className='nav' >
+                        <VscGithubProject className='icon' />
+                        <p>Project</p>
+                    </Link>
+                    <Link to={'/contact'} className='nav'>
+                        <RiContactsLine className='icon' />
+                        <p>Contact</p>
+                    </Link>
+                </div>
                 <Link to={'/contact'}>
                     <button className='lets-talk'>Let's Talks</button>
                 </Link>

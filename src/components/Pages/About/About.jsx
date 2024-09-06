@@ -10,7 +10,6 @@ import Node from '../../../assets/nodejs.png'
 import MongoDb from '../../../assets/mongodb.png'
 import Express from '../../../assets/express-js.png'
 const About = () => {
-  //  show the animation count value here logic
   const [yearsExperience, setYearsExperience] = useState(0);
   const [projectCompletion, setProjectCompletion] = useState(0);
   const [happyClient, setHappyClient] = useState(0);
@@ -60,7 +59,6 @@ const About = () => {
       <div className='quote-text'>
         <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>1 years</span> of Experiences .</p>
       </div>
-      {/* show the experience in the count wise also show the project completion */}
       <div className='experience-count-show'>
         <div className='years-of-experience '>
           <p className='name-intro count-year'>{yearsExperience}+</p>

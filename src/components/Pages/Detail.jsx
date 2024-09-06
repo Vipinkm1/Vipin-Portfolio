@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import CompanyLogo1 from '../../assets/ulinkit-icon.png';
+import TwiLearn from '../../assets/twilearnlogo.png'
 import Html from '../../assets/html.png';
 import Css from '../../assets/css.png';
 import JavaScript from '../../assets/JavaScript.png';
@@ -15,11 +16,9 @@ const Detail = () => {
   const navigate = useNavigate()
   //  show the list of the work experience
   const workExperience = [
-    { id: 1, year: '2024-Present', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
-    { id: 2, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
-    { id: 3, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
-    { id: 4, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
-    { id: 5, year: '2019-2023', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
+    { id: 1, year: 'Mar/2024-Present', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
+    { id: 2, year: 'Dec/2022-Jan/2023', companyName: 'TwiLearn EdTech', companyProfile: 'Web Developer', CompanyImage: TwiLearn },
+
   ]
   //  show here list of my experties
   const experties = [
@@ -29,7 +28,7 @@ const Detail = () => {
     { id: 4, expertiesImage: ReactLogo, expertiesTitle: 'React' },
     { id: 5, expertiesImage: Redux, expertiesTitle: 'Redux Toolkit' },
     { id: 6, expertiesImage: Firebase, expertiesTitle: 'Firebase' }
-    
+
     // add more id 
   ]
   //  check more item value
@@ -77,7 +76,7 @@ const Detail = () => {
         <div className='recent-project-containerr'>
           <div className='flex-item'>
             <h2 className='font-size-title'>Recent project</h2>
-            <div className='show-all-Project'  onClick={() => navigate('/project')}>
+            <div className='show-all-Project' onClick={() => navigate('/project')}>
               <p>All Project</p>
               <MdOutlineArrowRightAlt />
             </div>
