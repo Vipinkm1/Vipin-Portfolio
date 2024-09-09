@@ -57,7 +57,7 @@ const About = () => {
       </div>
       {/* Show some quote here  */}
       <div className='quote-text'>
-        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>1 years</span> of Experiences .</p>
+        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>6 month</span> of Experiences .</p>
       </div>
       <div className='experience-count-show'>
         <div className='years-of-experience '>

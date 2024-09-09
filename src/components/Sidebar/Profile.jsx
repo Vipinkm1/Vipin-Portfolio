@@ -34,7 +34,7 @@ const Profile = () => {
       </div>
       {/*  profile page */}
       <div className='person-name'>Vipin Kumar  <span c><MdOutlineWavingHand className='waving-hand' /> </span></div>
-      <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Product Designer having 6 month of Experiences over .</div>
+      <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Frontend Developer having 7 month of Experiences over .</div>
       <div className='two-btn'>
 
         <div className=' call-section bg-btn'>
