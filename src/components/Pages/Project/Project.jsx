@@ -34,10 +34,8 @@ const Project = () => {
               </div>
               <a href={projectItem.link} target='_blank' rel='noopener noreferrer'>
                 <div className='available-flex'>
-
                   <p className='name-intro available-font'>Visite Site</p>
                   <IoIosArrowRoundForward />
-
                 </div>
               </a>
             </div>

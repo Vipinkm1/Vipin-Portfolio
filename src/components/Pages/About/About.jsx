@@ -48,6 +48,7 @@ const About = () => {
     <div className='about-border'>
       <div className='about-flex-item'>
         <div>
+        {/*  add  the code value to show document and the product  */}
           <p className='name-intro'><span className='black-quote'>Hi, This Is</span> Vipin Kumar 👋</p>
         </div>
         <div className='available-flex'>
