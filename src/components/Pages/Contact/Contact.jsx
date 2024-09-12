@@ -39,7 +39,7 @@ const Contact = () => {
         <p className='project-font-size'>Let's 👋 Work Together</p>
       </div>
       <div className='new-text-padding project-quote'>
-        <p className='project-font-size quote-size'>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+        <p className='project-font-size quote-size'>I'm here to help if you're searching for a Fronted developer to bring your idea to life or a design and develope partner to help take your business to the next level.</p>
       </div>
       {/*  add the main component value  to show the start showing  the input field value  and show the 
       
