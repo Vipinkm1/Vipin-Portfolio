@@ -17,13 +17,9 @@ const Services = () => {
     { id: 1, serviceImage: UX, serviceTitle: 'UX/UI Designer' },
     { id: 2, serviceImage: Fronted, serviceTitle: 'Fronted Design' },
     { id: 3, serviceImage: Cms, serviceTitle: 'CMS Website' },
-    { id: 4, serviceImage: Website, serviceTitle: "Website Maintenence" },
-    { id: 5, serviceImage: Developer, serviceTitle: 'Website Developer' },
-    { id: 6, serviceImage: Cms, serviceTitle: 'CMS Website' },
-    { id: 7, serviceImage: UX, serviceTitle: 'UX/UI Designer' },
-    { id: 8, serviceImage: Website, serviceTitle: "Website Maintenence" },
-    { id: 9, serviceImage: Website, serviceTitle: "Website Maintenence" },
-    { id: 10, serviceImage: Website, serviceTitle: "Website Maintenence" }
+    { id: 4, serviceImage: Developer, serviceTitle: 'Website Developer' },
+    { id: 5, serviceImage: Website, serviceTitle: "Website Maintenence" },
+
   ]
 
 
