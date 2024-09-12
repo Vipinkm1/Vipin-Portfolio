@@ -20,7 +20,7 @@ const Project = () => {
         <p className='project-font-size'>Check Out My Latest <span className='new-project-color'>Projects</span></p>
       </div>
       <div className='new-text-padding project-quote'>
-        <p className='project-font-size quote-size'>I'm here to help if you're searching for a product designer to bring your idea to life or a design partner to help take your business to the next level.</p>
+        <p className='project-font-size quote-size'>I'm here to help if you're searching for a Frontend Developer to bring your idea to life or a design partner to help take your business to the next level.</p>
       </div>
       <div className='project-container'>
         {projectList.map((projectItem, id) => (

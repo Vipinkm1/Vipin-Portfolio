@@ -36,7 +36,7 @@ const Services = () => {
         </div>
       </div>
       <div className='quote-text'>
-        <p className='name-intro text-color'>Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert <span className='black-quote'>Product Design and Development Services!</span> </p>
+        <p className='name-intro text-color'>Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert <span className='black-quote'>Frontend Design and Development Services!</span> </p>
       </div>
       <div className='brand-img'>
         {services.map((serviceItem, id) => (
