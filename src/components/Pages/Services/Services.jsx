@@ -15,13 +15,13 @@ const Services = () => {
   //  imported value added the main condition value
   const services = [
     { id: 1, serviceImage: UX, serviceTitle: 'UX/UI Designer' },
-    { id: 2, serviceImage: Fronted, serviceTitle: 'Fronted Design' },
+    { id: 2, serviceImage: Fronted, serviceTitle: 'Frontend Design' },
     { id: 3, serviceImage: Cms, serviceTitle: 'CMS Website' },
     { id: 4, serviceImage: Developer, serviceTitle: 'Website Developer' },
     { id: 5, serviceImage: Website, serviceTitle: "Website Maintenence" },
 
   ]
-
+  
 
   
   return (
@@ -33,7 +33,7 @@ const Services = () => {
         <div className='available-flex'>
           <p className='name-intro available-font'>I'm Available</p>
           <img className='vedio-size' src={Live} />
-        </div>
+        </div>th
       </div>
       <div className='quote-text'>
         <p className='name-intro text-color'>Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert <span className='black-quote'>Frontend Design and Development Services!</span> </p>
@@ -60,7 +60,7 @@ const Services = () => {
         {/*  open the first box */}
         {openBoxFirst && (
           <div className='answer-border'>
-            <p className='frequntly-answer'>Front-end developers create the part of websites and web applications that users see and interact with.</p>
+            <p className='frequntly-answer'>Frontend developers create the part of websites and web applications that users see and interact with.</p>
           </div>
         )}
       </div>
