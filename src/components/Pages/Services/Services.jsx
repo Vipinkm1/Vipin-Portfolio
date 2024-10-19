@@ -34,7 +34,7 @@ const Services = () => {
         <div className='available-flex'>
           <p className='name-intro available-font'>I'm Available</p>
           <img className='vedio-size' src={Live} />
-        </div>th
+        </div>
       </div>
       <div className='quote-text'>
         <p className='name-intro text-color'>Transforming Ideas into Innovative Reality, Elevate Your Vision with Our Expert <span className='black-quote'>Frontend Design and Development Services!</span> </p>
