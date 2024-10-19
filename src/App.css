@@ -597,6 +597,7 @@ a{
   border: none;
   outline: none;
   border: 2px;
+  cursor: pointer;
 }
 .button-width:hover{
   background-color:rgb(113, 113, 245) ;

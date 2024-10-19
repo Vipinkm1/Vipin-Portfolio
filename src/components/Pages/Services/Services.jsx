@@ -21,9 +21,10 @@ const Services = () => {
     { id: 5, serviceImage: Website, serviceTitle: "Website Maintenence" },
 
   ]
-  
 
-  
+
+
+  //  
   return (
     <div className='about-border service-scroll'>
       <div className='about-flex-item'>
