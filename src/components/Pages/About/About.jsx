@@ -48,7 +48,6 @@ const About = () => {
     <div className='about-border'>
       <div className='about-flex-item'>
         <div>
-        {/*  add  the code value to show document and the product  */}
           <p className='name-intro'><span className='black-quote'>Hi, This Is</span> Vipin Kumar 👋</p>
         </div>
         <div className='available-flex'>
@@ -56,9 +55,8 @@ const About = () => {
           <img className='vedio-size' src={Vedio} />
         </div>
       </div>
-      {/* Show some quote here  */}
       <div className='quote-text'>
-        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>7 month</span> of Experiences .</p>
+        <p className='name-intro'>A Passionate <span className='black-quote'>Full Stack Developer </span>🖥️ & <span className='black-quote'>Frontend Developer</span> having <span>1 Year</span> of Experiences .</p>
       </div>
       <div className='experience-count-show'>
         <div className='years-of-experience '>
