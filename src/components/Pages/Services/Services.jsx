@@ -55,7 +55,7 @@ const Services = () => {
       <div className='container-1'>
       {/*  check the open box are  in the component and it will be shown or not */}
         <div className='question-heading'>
-          <p className='frequently-question-title'>What does fronted developer do?</p>
+          <p className='frequently-question-title'>What does frontend developer do?</p>
           <p className='plus-icon' onClick={() => setOpenBoxFirst(!openBoxFirst)}>{openBoxFirst ? '-' : '+'}</p>
         </div>
         {/*  open the first box */}

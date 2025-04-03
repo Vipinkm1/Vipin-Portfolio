@@ -16,28 +16,27 @@ const Navbar = () => {
     return (
         <div className='nav-border'  >
             <div className='nav-item'>
-                <Link to={'/'} className='logo-container'>
+                <Link to={'/'} className='logo-container' onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                     <img className='logo-size' src={Logo} />
                 </Link>
-                <div className={`nav-container ${isOpen ? 'active' : ''}`}>
-                    <Link to={'/'} className='nav show-active'  >
+                <div className={`nav-container ${isOpen ? 'active' : ' '}`}>
+                    <Link to={'/'} className='nav show-active'  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'}) } >
                         <AiOutlineHome className='icon' />
                         <p>Home</p>
                     </Link>
-                    <Link to={'/about'} className='nav '>
+                    <Link to={'/about'} className='nav '  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'}) }>
                         <PiUserCircle className='icon' />
                         <p>About</p>
                     </Link>
-                    <Link to={'/services'} className='nav' >
+                    <Link to={'/services'} className='nav' onClick={() => window.scrollTo({top: 0, behavior: 'smooth'}) } >
                         <IoLayersOutline className='icon' />
                         <p>Services</p>
                     </Link>
-                    <Link to={'/project'} className='nav' >
+                    <Link to={'/project'} className='nav'  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'}) }>
                         <VscGithubProject className='icon' />
                         <p>Project</p>
                     </Link>
-                 
-                    <Link to={'/contact'} className='nav'>
+                    <Link to={'/contact'} className='nav'  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'}) }>
                         <RiContactsLine className='icon' />
                         <p>Contact</p>
                     </Link>

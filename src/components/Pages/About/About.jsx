@@ -25,6 +25,7 @@ const About = () => {
         }
       }, 30)
     }
+    
     //  show value here
     animatedCount(setYearsExperience, 1)
     animatedCount(setProjectCompletion, 6)

@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import CompanyLogo1 from '../../assets/ulinkit-icon.png';
+import CompanyLogo3 from '../../assets/meander.png';
 import TwiLearn from '../../assets/twilearnlogo.png'
 import Html from '../../assets/html.png';
 import Css from '../../assets/css.png';
@@ -16,8 +17,9 @@ const Detail = () => {
   const navigate = useNavigate()
   //  show the list of the work experience
   const workExperience = [
-    { id: 1, year: 'Mar/2024-Present', companyName: 'UlinkIt', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
-    { id: 2, year: 'Dec/2022-Jan/2023', companyName: 'TwiLearn EdTech', companyProfile: 'Web Developer', CompanyImage: TwiLearn },
+    {id: 1, year: 'Dec/2024-Present', companyName: 'Meander Software', companyProfile: 'Full Stack Developer', CompanyImage: CompanyLogo3 },
+    { id: 2, year: 'Mar/2024-Dec/2024', companyName: 'Ulink Outsourcing', companyProfile: 'Software Developer', CompanyImage: CompanyLogo1 },
+    { id: 3, year: 'Dec/2022-Jan/2023', companyName: 'TwiLearn EdTech', companyProfile: 'Web Developer', CompanyImage: TwiLearn },
 
   ]
   //  show here list of my experties
