@@ -34,12 +34,12 @@ const Profile = () => {
       </div>
       {/*  profile page */}
       <div className='person-name'>Vipin Kumar  <span c><MdOutlineWavingHand className='waving-hand' /> </span></div>
-      <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Frontend Developer having 7 month of Experiences over .</div>
+      <div className='introduction-part'>A Passionate <span className='highlight-text'>Full Stack Developer</span> 🖥️ & Frontend Developer having 1+ year of Experiences over .</div>
       <div className='two-btn'>
 
         <div className=' call-section bg-btn'>
           <GoDownload className='call-icon' />
-          <a href='https://drive.google.com/file/d/1srXZ33lflwh4Q0fqXfQfZa5exqMkwTtb/view?usp=sharing'>
+          <a href='https://drive.google.com/file/d/1gh8gx9FXGgen2VAZI29dWwVJAV58Mz4m/view?usp=sharing'>
             <button className='book-btn'> Resume</button>
           </a>
         </div>
