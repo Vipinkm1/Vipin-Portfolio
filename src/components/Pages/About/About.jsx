@@ -27,7 +27,7 @@ const About = () => {
     }
     
     //  show value here
-    animatedCount(setYearsExperience, 1)
+    animatedCount(setYearsExperience, 2)
     animatedCount(setProjectCompletion, 6)
     animatedCount(setHappyClient, 10)
     return () => {
